@@ -17,5 +17,9 @@ control panel? There are a couple of reasons this might be happening.
   The [Glide Tag][glide] expects to you to pass through an ID of an asset, or a path to an image file. If either of
   these are incorrect, the image resizing won't happen. Perhaps you aren't passing in the correct ID, or there is
   a typo in the image path.
+  
+ - **Missing EXIF plugin**
+   It might be that your setup is missing the PHP EXIF plugin: http://php.net/manual/en/exif.installation.php. You can verify
+   if you are missing the EXIF plugin by loading an image-URL directly in the browser and read the error-message (if any).
 
 [glide]: /tags/glide
